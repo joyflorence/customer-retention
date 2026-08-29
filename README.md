@@ -102,22 +102,6 @@ Business Insights and Recommendations
 
 
 
-# Portfolio Deliverables
-
-## Python
-Data cleaning
-Exploratory Data Analysis
-Customer segmentation
-Trend analysis
-
-## Power BI
-Create an executive dashboard showing:
-Total customers
-Customer retention
-Churn rate
-Revenue by customer segment
-Customer trends
-
 
 
 
