@@ -1,16 +1,24 @@
 # Customer Retention & Business Performance Analysis
 
-## Project Overview
+An end-to-end customer retention and business performance analysis using Python and Streamlit.
 
-This project analyses customer churn and retention patterns using the Telco Customer Churn dataset.
-
-The goal is to understand customer behaviour, identify factors associated with customer churn, segment customers based on their value and engagement, analyse revenue performance, and generate actionable business recommendations to improve customer retention.
-
-The project follows an end-to-end data analysis workflow, combining data cleaning, exploratory data analysis (EDA), churn analysis, customer segmentation, revenue analysis, and an interactive Streamlit dashboard.
+The project explores customer churn, retention, customer behaviour, segmentation, and revenue performance to identify opportunities for improving customer retention and supporting data-driven business decisions.
 
 ---
 
-## Business Problem
+## 📊 Project Highlights
+
+- 📈 Analysed over **7,000 customer records**.
+- 📉 Calculated overall customer churn and retention rates.
+- 👥 Created customer segments based on customer behaviour, value, tenure, and engagement.
+- 💰 Analysed revenue contribution across customer segments.
+- 🔍 Identified customer characteristics associated with higher churn.
+- 📊 Built an interactive dashboard using Streamlit and Plotly.
+- 🎯 Developed business-focused customer retention recommendations.
+
+---
+
+## 🎯 Business Problem
 
 Customer churn can significantly affect a company's revenue and long-term growth. Understanding why customers leave and identifying customer groups that require attention can help businesses develop more effective retention strategies.
 
@@ -27,42 +35,7 @@ This project aims to answer questions such as:
 
 ---
 
-## Dashboard
-
-An interactive dashboard was developed using **Streamlit** and **Plotly** to present key customer retention and business performance metrics.
-
-### Key Performance Indicators
-
-The dashboard includes:
-
-- Total Customers
-- Customer Retention Rate
-- Customer Churn Rate
-- Total Revenue
-
-### Dashboard Analysis
-
-The interactive dashboard provides insights into:
-
-- Customer Retention vs Churn
-- Revenue by Customer Segment
-- Customer Distribution by Lifecycle
-- Churn Rate by Customer Segment
-- Churn Rate by Contract Type
-- Churn Rate by Payment Method
-
-### Dashboard Filters
-
-Users can interact with the dashboard using filters for:
-
-- Gender
-- Contract Type
-- Internet Service
-- Customer Segment
-
----
-
-## Dataset
+## 📂 Dataset
 
 The dataset used in this project is the **Telco Customer Churn Dataset**.
 
@@ -97,9 +70,9 @@ It contains customer-level information including:
 
 ---
 
-## Tools and Technologies
+# 🛠️ Tools and Technologies
 
-### Data Analysis
+## Data Analysis
 
 - **Python**
 - **Pandas** – Data manipulation and analysis
@@ -108,16 +81,81 @@ It contains customer-level information including:
 - **KaggleHub** – Dataset access
 - **Jupyter Notebook / VS Code** – Data analysis environment
 
-### Dashboard Development
+## Dashboard Development
 
 - **Streamlit** – Interactive dashboard development
 - **Plotly** – Interactive data visualisation
 
 ---
 
-## Project Workflow
+# 🔄 Analysis Methodology
 
-The project followed the following analytical process:
+The project followed a structured business analysis approach:
+
+### 1. Data Understanding
+
+Examined the dataset structure, variables, data types, and overall data quality.
+
+### 2. Data Cleaning
+
+Identified and handled:
+
+- Invalid blank values.
+- Data type inconsistencies.
+- Numerical conversion issues.
+- Potential outliers.
+
+### 3. Exploratory Data Analysis
+
+Explored:
+
+- Customer demographics.
+- Customer tenure.
+- Monthly charges.
+- Total charges.
+- Customer services.
+- Customer churn behaviour.
+
+### 4. Churn Analysis
+
+Calculated and analysed:
+
+- Total customers.
+- Churned customers.
+- Retained customers.
+- Customer churn rate.
+- Customer retention rate.
+
+### 5. Customer Segmentation
+
+Customers were grouped based on:
+
+- Customer tenure.
+- Spending behaviour.
+- Customer value.
+- Service usage.
+- Customer churn behaviour.
+
+### 6. Revenue Analysis
+
+Revenue performance was analysed across customer segments to understand:
+
+- Total revenue contribution.
+- Customer value.
+- Revenue distribution.
+- High-value customer groups.
+
+### 7. Business Recommendations
+
+Customer retention strategies were developed based on the patterns identified during the analysis.
+
+### 8. Dashboard Development
+
+An interactive Streamlit dashboard was developed to communicate key business metrics and insights.
+
+---
+
+# 📊 Project Workflow
 
 ```text
 Data Collection
@@ -147,57 +185,93 @@ Streamlit Dashboard Development
 
 ---
 
-## Data Cleaning and Preparation
+# 📈 Dashboard
 
-The dataset was prepared through the following steps:
+An interactive dashboard was developed using **Streamlit** and **Plotly** to present customer retention and business performance insights.
 
-- Checked dataset structure and data types.
-- Identified missing values.
-- Identified invalid blank values.
-- Converted `TotalCharges` into a numerical data type.
-- Investigated potential outliers in numerical variables.
-- Prepared the dataset for exploratory analysis and dashboard development.
+## Key Performance Indicators
 
----
+The dashboard includes:
 
-## Exploratory Data Analysis
+- Total Customers
+- Customer Retention Rate
+- Customer Churn Rate
+- Total Revenue
 
-Exploratory Data Analysis was performed to understand customer characteristics and relationships between customer behaviour and churn.
+## Dashboard Analysis
 
-The analysis included:
+The dashboard provides insights into:
 
-- Distribution of customer demographics.
-- Analysis of customer tenure.
-- Distribution of monthly and total charges.
-- Categorical variable analysis.
-- Numerical variable analysis.
-- Customer churn comparisons.
+- Customer Retention vs Churn
+- Revenue by Customer Segment
+- Customer Distribution by Lifecycle
+- Churn Rate by Customer Segment
+- Churn Rate by Contract Type
+- Churn Rate by Payment Method
 
----
+## Dashboard Filters
 
-## Customer Churn Analysis
+Users can interact with the dashboard using filters for:
 
-Customer churn was analysed to understand customer retention performance and identify groups with higher churn.
-
-Key metrics analysed include:
-
-- Total number of customers.
-- Number of churned customers.
-- Number of retained customers.
-- Customer churn rate.
-- Customer retention rate.
-
-Churn was further explored across different customer characteristics, including:
-
-- Contract type.
-- Customer tenure.
-- Payment method.
-- Internet service.
-- Customer segments.
+- Gender
+- Contract Type
+- Internet Service
+- Customer Segment
 
 ---
 
-## Customer Segmentation
+# 🖥️ Dashboard Preview
+
+- checkout dashboard from the link
+
+# 🔍 Key Findings
+
+The analysis identified several important patterns in customer behaviour and retention.
+
+- The overall customer churn rate was **26.6%**.
+- The customer retention rate was **73.4%**.
+- Customers with **MOM** experienced the highest churn rate of **42.7%**.
+- Customers in the **high-value loyal** segment generated the highest total revenue.
+- Customers with **[Shorter]tenure** experienced higher churn.
+- **Payment Method of Electronic check** was associated with a higher churn rate.
+- **High-value churned customer segment** represented an important high-value group that should be prioritised for retention efforts.
+
+These findings highlight opportunities for targeted customer retention strategies and improved customer engagement.
+
+
+---
+
+# 💡 Business Recommendations
+
+| Business Finding | Recommended Action | Expected Business Impact |
+|---|---|---|
+| High churn among new customers | Improve onboarding and early customer engagement | Improve early customer retention |
+| High-value customers are at risk of churn | Develop personalised retention offers | Protect valuable revenue |
+| High churn among month-to-month customers | Encourage customers to move to longer-term contracts | Improve customer loyalty and retention |
+| Low engagement customers | Recommend relevant services and personalised bundles | Increase engagement and customer value |
+| Certain payment methods are associated with higher churn | Investigate customer payment experience and offer alternative payment options | Reduce potential friction and churn |
+
+---
+
+# 💼 Business Impact
+
+This analysis provides a structured approach for understanding customer churn and identifying customer groups that may require targeted retention strategies.
+
+The insights can help a business:
+
+- Identify customer groups with higher churn risk.
+- Prioritise valuable customers for retention efforts.
+- Understand how customer contracts relate to retention.
+- Identify revenue contribution across customer segments.
+- Improve customer engagement strategies.
+- Support data-driven decision-making.
+- Develop targeted retention campaigns.
+
+The project demonstrates how customer data can be transformed into actionable insights that support customer retention and business performance.
+
+---
+
+# 👥 Customer Segmentation
 
 Customers were segmented based on different aspects of customer behaviour and value.
 
@@ -209,7 +283,7 @@ Segmentation factors included:
 - Number of subscribed services.
 - Customer churn behaviour.
 
-Customer profiles were created to help identify groups with different business characteristics, including:
+Customer profiles included:
 
 - High-Value Loyal Customers
 - High-Value Churned Customers
@@ -217,9 +291,11 @@ Customer profiles were created to help identify groups with different business c
 - Low Engagement Customers
 - Standard Customers
 
+These customer profiles help identify groups with different behaviours, business value, and retention needs.
+
 ---
 
-## Revenue Analysis
+# 💰 Revenue Analysis
 
 Revenue performance was analysed across customer segments to understand the financial contribution of different customer groups.
 
@@ -230,43 +306,24 @@ The analysis explored:
 - Revenue contribution across customer groups.
 - The relationship between customer retention and business value.
 
-This helps identify valuable customer segments that may require greater attention and retention efforts.
+This helps identify valuable customer groups that may require greater retention attention.
 
 ---
 
-## Business Insights and Recommendations
+# ⚠️ Limitations and Assumptions
 
-The analysis was used to generate business-focused recommendations aimed at improving customer retention.
+This analysis has several limitations:
 
-Potential strategies include:
-
-### High-Value Loyal Customers
-
-- Develop loyalty programmes.
-- Provide personalised offers.
-- Offer priority customer support.
-
-### New Customers at Risk of Churn
-
-- Improve customer onboarding.
-- Increase early customer engagement.
-- Provide introductory incentives.
-
-### Low Engagement Customers
-
-- Develop personalised service recommendations.
-- Promote relevant service bundles.
-- Improve customer engagement.
-
-### High-Value Customers at Risk of Churn
-
-- Identify potential churn risks earlier.
-- Develop proactive retention strategies.
-- Provide targeted offers to protect valuable customers.
+- The dataset represents a snapshot of customer information rather than a time-series dataset.
+- Traditional monthly or yearly churn trends could not be analysed because a date variable was not available.
+- The analysis identifies associations with churn but does not establish causation.
+- Revenue calculations are based on the available `TotalCharges` variable and may not represent the company's complete financial performance.
+- Customer segments were created using business rules and available dataset variables.
+- The dataset represents a specific customer population and findings may not directly generalise to other businesses or industries.
 
 ---
 
-## Project Structure
+# 📁 Project Structure
 
 ```text
 customer-retention/
@@ -274,33 +331,34 @@ customer-retention/
 ├── app.py
 ├── requirements.txt
 ├── telco_customer_dashboard_data.csv
-├── customer churn.ipynb
-└── README.md
+├── customer_retention_analysis.ipynb
+├── README.md
+└── 
 ```
 
 ---
 
-## Running the Project Locally
+# 🚀 Running the Project Locally
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone <your-repository-url>
 ```
 
-### 2. Navigate to the Project Folder
+## 2. Navigate to the Project Folder
 
 ```bash
 cd customer-retention
 ```
 
-### 3. Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Streamlit Dashboard
+## 4. Run the Streamlit Dashboard
 
 ```bash
 streamlit run app.py
@@ -310,7 +368,7 @@ The dashboard will open in your browser.
 
 ---
 
-## Requirements
+# 📦 Requirements
 
 The project uses the following Python libraries:
 
@@ -325,7 +383,7 @@ kagglehub
 
 ---
 
-## Key Skills Demonstrated
+# 🧠 Key Skills Demonstrated
 
 - Data Cleaning
 - Data Preparation
@@ -338,14 +396,15 @@ kagglehub
 - Data Visualisation
 - Interactive Dashboard Development
 - Python
+- Pandas
 - Streamlit
 - Plotly
 
 ---
 
-## Future Improvements
+# 🔮 Future Improvements
 
-Potential future improvements to this project include:
+Potential future improvements include:
 
 - Developing a machine learning model to predict customer churn.
 - Adding predictive customer risk scores.
@@ -356,10 +415,10 @@ Potential future improvements to this project include:
 
 ---
 
-## Author
+# 👤 Author
 
 **Joy Florence**
 
 Aspiring Data Analyst | Business Analyst
 
-Skills: Python | SQL | Excel | Power BI | Streamlit | Data Analysis
+**Skills:** Python | SQL | Excel | Power BI | Streamlit | Data Analysis
